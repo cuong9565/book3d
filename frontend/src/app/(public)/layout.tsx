@@ -5,8 +5,6 @@ export default function PublicLayout({ children }: { children: React.ReactNode }
     return (
         <div className="">
             <Header />
-            <main>{children}</main>
-            <Footer />
         </div>
     );
 }
