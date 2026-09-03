@@ -1,7 +1,13 @@
+import HeroSection from "@/components/home/HeroSection"
+import ContinueReading from "@/components/home/ContinueReading"
+import WhyEdu3D from "@/components/home/WhyEdu3D"
+
 export default function HomePage(){
     return (
-        <div className="">
-            <div className="">Trang chủ</div>
-        </div>
+        <main className="">
+            <HeroSection />
+            <ContinueReading />
+            <WhyEdu3D />
+        </main>
     );
 }
