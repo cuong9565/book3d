@@ -5,13 +5,12 @@ import { Select, Label, ListBox, Card, SearchField } from "@heroui/react";
 export default function FilterSection() {
   return (
     <div className="max-w-7xl mx-auto px-container-margin ">
-
         <Card className="bg-surface-container-lowest border border-outline-variant shadow-sm p-2 sm:p-4 rounded-2xl mb-8">
             {/* Main Search Input */}
-            <SearchField name="search">
+            <SearchField name="search" aria-label="Tìm kiếm sách">
                 <SearchField.Group>
                     <SearchField.SearchIcon />
-                    <SearchField.Input className="w-70" placeholder="Tìm kiếm theo tiêu đề, tác giả hoặc từ khóa..." />
+                    <SearchField.Input className="w-full" placeholder="Tìm kiếm sách..."/>
                     <SearchField.ClearButton />
                 </SearchField.Group>
             </SearchField>
@@ -37,7 +36,7 @@ export default function FilterSection() {
 
                     {/* Sắp xếp */}
                     <Select className="" placeholder="Phổ biến nhất" defaultValue="pop" >
-                        <Label>Thể loại</Label>
+                        <Label>Sắp xếp theo</Label>
                         <Select.Trigger>
                             <Select.Value />
                             <Select.Indicator />

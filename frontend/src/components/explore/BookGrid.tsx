@@ -1,7 +1,6 @@
 "use client";
 
-import React from "react";
-import { Card, CardFooter, Chip, Button } from "@heroui/react";
+import { Card, Chip, Button } from "@heroui/react";
 import { Star, GraduationCap, Rotate3D, Volume2, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
@@ -80,6 +79,7 @@ export default function BookGrid() {
                 alt={book.title}
                 className="object-cover rounded-2xl"
                 src={book.image}
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
               />
               <div className="absolute top-2 right-2 flex gap-1 z-10">
                 {book.has3D && (
