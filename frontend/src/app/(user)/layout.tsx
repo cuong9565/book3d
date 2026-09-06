@@ -1,12 +1,12 @@
-import UserSidebar from "@/components/layouts/UserSidebar"
+import Header from "@/components/layouts/Header"
+import Footer from "@/components/layouts/Footer"
 
-export default function UserLayout({children}: {children: React.ReactNode}){
+export default function PublicLayout({ children }: { children: React.ReactNode }) {
     return (
         <div className="">
-            <UserSidebar />
-            <main>
-                {children}
-            </main>
+            <Header />
+            { children }
+            <Footer />
         </div>
     );
 }
