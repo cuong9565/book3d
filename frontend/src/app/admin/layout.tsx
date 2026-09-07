@@ -1,12 +1,15 @@
-import AdminSidebar from "@/components/layouts/AdminSidebar"
+import AdminSidebar from "@/components/admin/AdminSidebar";
+import AdminHeader from "@/components/admin/AdminHeader";
 
 export default function AdminLayout({children}: {children: React.ReactNode}){
     return(
-        <div className="">
+        <div className="min-h-screen bg-background text-foreground">
             <AdminSidebar />
-            <main>
-                {children}
-            </main>
+
+            <div className="min-h-screen lg:pl-72">
+                <AdminHeader />
+                { children }
+            </div>
         </div>
     );
 }
